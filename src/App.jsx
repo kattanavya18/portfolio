@@ -86,7 +86,7 @@ function App() {
         }}
       />
       
-      <nav className="navbar" style={{ padding: '25px 50px', border: 'none', background: 'transparent' }}>
+      <nav className="navbar">
         <motion.div 
           className="scroll-progress"
           style={{
@@ -100,10 +100,10 @@ function App() {
             scaleX
           }}
         />
-        <div className="logo" style={{ fontWeight: '800', fontSize: '1.8rem', letterSpacing: '-0.05em' }}>
+        <div className="logo" style={{ fontWeight: '800', fontSize: '1.5rem', letterSpacing: '-0.05em' }}>
           N<span className="gradient-text">K</span>
         </div>
-        <div className="nav-links glass" style={{ padding: '10px 30px', borderRadius: '50px', display: 'flex', gap: '15px' }}>
+        <div className="nav-links glass">
           {navItems.map((item) => (
             <Magnetic key={item.path}>
               <Link 
@@ -139,8 +139,8 @@ function App() {
           style={{ textAlign: 'center', padding: '150px 20px', position: 'relative' }}
         >
           <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '300px', height: '300px', background: 'var(--accent-primary)', filter: 'blur(150px)', opacity: 0.1, zIndex: -1 }}></div>
-          <h2 style={{ fontSize: '4.5rem', marginBottom: '20px', fontWeight: '800' }}>Ready to <span className="gradient-text">Innovate?</span></h2>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: '50px', fontSize: '1.4rem', fontWeight: '300' }}>I'm currently open to new opportunities and interesting AI projects.</p>
+          <h2 className="contact-heading" style={{ marginBottom: '20px', fontWeight: '800' }}>Ready to <span className="gradient-text">Innovate?</span></h2>
+          <p className="contact-subheading" style={{ color: 'var(--text-secondary)', marginBottom: '50px', fontWeight: '300' }}>I'm currently open to new opportunities and interesting AI projects.</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', alignItems: 'center' }}>
             <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="mailto:navya.jh2026@gmail.com" className="glass" style={{ padding: '18px 50px', textDecoration: 'none', color: 'white', fontWeight: '700', borderRadius: '50px' }}>Say Hello</motion.a>
           </div>

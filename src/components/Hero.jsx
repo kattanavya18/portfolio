@@ -86,7 +86,7 @@ const Hero = () => {
           transition={{ delay: 1.2 }}
           style={{ marginTop: '50px', display: 'flex', flexDirection: 'column', gap: '30px', alignItems: 'center' }}
         >
-          <div style={{ display: 'flex', gap: '20px', justifyContent: 'center' }}>
+          <div className="hero-buttons" style={{ display: 'flex', gap: '20px', justifyContent: 'center' }}>
             <motion.a 
               whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(0, 210, 255, 0.4)" }}
               whileTap={{ scale: 0.95 }}

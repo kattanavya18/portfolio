@@ -224,3 +224,96 @@ section {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-primary);
 }
+
+/* Responsive Typography & Layout */
+@media (max-width: 1024px) {
+  section {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --nav-padding: 15px 20px;
+  }
+
+  section {
+    padding: 50px 15px;
+  }
+
+  .profile-photo-container {
+    width: 260px;
+    height: 260px;
+  }
+
+  h1 { font-size: 3rem !important; }
+  h2 { font-size: 2rem !important; }
+  h3 { font-size: 1.5rem !important; }
+
+  .navbar {
+    padding: var(--nav-padding) !important;
+  }
+
+  .nav-links {
+    padding: 8px 15px !important;
+    gap: 10px !important;
+    font-size: 0.8rem;
+    overflow-x: auto;
+    max-width: 80vw; /* Limit width to allow logo visibility */
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 25px !important;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 2.5rem !important; }
+  h2 { font-size: 1.8rem !important; }
+  
+  .profile-photo-container {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px !important;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px !important;
+  }
+}
+
+/* Fix for horizontal overflow issues */
+.portfolio-app {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.contact-heading {
+  font-size: 4.5rem;
+}
+
+.contact-subheading {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 2.5rem;
+  }
+  .contact-subheading {
+    font-size: 1.1rem;
+  }
+}
+
+
